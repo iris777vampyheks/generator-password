@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator</title>
+    <link rel="stylesheet" href="/public/css/app.css">
+</head>
+
+<body>
+    <section class="container">
+        <div class="spacing">
+            <h1>Empower Your Security with<span class="mauve"> <br>Randomized Passwords</span></h1>
+            <p class="subheading text-accent">Banish Vulnerable Passwords Forever</p>
+            <div class="row">
+                <input type="text" id="length-value" placeholder="desired length:"> </input>
+                <button id="generate"><img class="pt-2" width="20" height="20"
+                        src="https://img.icons8.com/ios-filled/20/mechanistic-analysis.png"
+                        alt="mechanistic-analysis" />Create Secure Password</button>
+            </div>
+        </div>
+        <hr>
+        <p class="text-accent cl">Select a password to swiftly copy it to your clipboard!</p>
+
+        <div class="row">
+            <div class="column-left">
+                <p class="password" id="lawal"> </p>
+                <p class="password" id="tani"> </p>
+            </div>
+            <div class="column-right">
+                <p class="password" id="talt"> </p>
+                <p class="password" id="rab3"> </p>
+            </div>
+        </div>
+        <div class="password-strength">
+            <p>Password Strength:</p>
+            <div class="strength-indicator">
+                <div class="indicator-bar"></div>
+            </div>
+        </div>
+
+
+
+        <script src="public/js/app.js"></script>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap');
+
+:root {
+    --primary-color-base: #b91097;
+    --grey-900: #441d84;
+    --grey-800: #091345;
+    --grey-700: #273549;
+    --grey-600: #D5D4D8;
+    --white: #FFF;
+}
+
+html,
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--grey-900);
+    color: var(--white);
+}
+
+h1 {
+    font-family: 'Karla', sans-serif;
+    font-size: 40px;
+    color: var(--white);
+    margin: 0;
+}
+
+.subheading {
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    margin-top: 12px;
+    margin-bottom: 48px;
+}
+
+button {
+    padding: 12px;
+    border-radius: 6px;
+    color: var(--white);
+    background-color: var(--primary-color-base);
+    border: none;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #a20e85;
+}
+
+button > img {
+    margin-right: 8px;
+}
+
+#generate {
+    display: inline-flex;
+    height: 100%;
+}
+
+input[type="text"] {
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    margin-right: 16px;
+    font-size: 14px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+}
+
+.cl {
+    font-size: 18px;
+}
+
+.column-left,
+.column-right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.column-left {
+    margin-right: 8px;
+}
+
+.column-right {
+    margin-left: 8px;
+}
+
+.spacing {
+    margin-bottom: 18px;
+}
+
+.container {
+    padding: 48px;
+    margin: 48px;
+    background: var(--grey-800);
+}
+
+.text-accent {
+    color: var(--grey-600);
+}
+
+.password {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 8px 0;
+    font-family: 'Inter', sans-serif;
+    color: var(--primary-color-base);
+    background: var(--grey-700);
+    border-radius: 6px;
+    justify-content: center;
+    text-align: center;
+}
+
+hr {
+    background: var(--grey-700);
+    height: 1px;
+    border: none;
+}
+
+.password-strength {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.strength-indicator {
+    width: 100px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #ddd;
+    margin-left: 10px;
+    position: relative;
+}
+
+.indicator-bar {
+    height: 100px;
+    border-radius: 5px;
+    transition: width 0.3s ease-in-out;
+}
+
+.weak {
+    width: 33%;
+    background-color: #ff6b6b;
+}
+
+.medium {
+    width: 40%;
+    background-color: #ffdb58;
+}
+
+.strong {
+    width: 100%;
+    background-color: #a0e515;
+}
+
